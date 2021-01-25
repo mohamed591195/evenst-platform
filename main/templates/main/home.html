@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}"/>
+{% endblock %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block body %}
+    <div class="container event-list">
+    </div>
+{% endblock %}
+
+{% block script %}
+
+    <script src="{% static 'js/home.js' %}" type="text/javascript"></script>
+{% endblock %}

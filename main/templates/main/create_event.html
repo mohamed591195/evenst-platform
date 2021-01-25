@@ -1,0 +1,21 @@
+{%extends 'base.html'%}
+{% block title%} add Event {% endblock %}
+
+{% block body %}
+    <main>
+        <div class="container form-container">
+            <form method="POST" action="."> 
+                {% csrf_token %}
+                {{form.as_p}}
+                <input class="form-submit-btn" type="submit" 
+                {% if form.title.value %}
+                value="Update"
+                {% else %}
+                value="Add" 
+                {% endif %}
+                />
+            </form>
+    
+        </div>
+    </main>
+{% endblock %}
