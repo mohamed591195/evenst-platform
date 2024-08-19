@@ -9,7 +9,7 @@ class TestUsersForms(TestCase):
         data = {
             'first_name': 'Mohammad',
             'last_name': 'samir',
-            'email': 'mohamedsamir591195@gmail.com',
+            'email': 'email@email.com',
             'password1': '*',
             'password2': '*'
         }
