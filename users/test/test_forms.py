@@ -10,8 +10,8 @@ class TestUsersForms(TestCase):
             'first_name': 'Mohammad',
             'last_name': 'samir',
             'email': 'mohamedsamir591195@gmail.com',
-            'password1': '*8#Momomomom',
-            'password2': '*8#Momomomom'
+            'password1': '*',
+            'password2': '*'
         }
 
         form = UserRegistrationForm(data=data)
